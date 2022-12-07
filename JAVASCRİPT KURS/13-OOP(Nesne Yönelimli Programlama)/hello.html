@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selam Uygulaması</title>
+</head>
+<body>
+    <script>
+        //Person => Sınıf oluşturacağız.
+        //selam() => metodu olacak.
+        //name => Hello Name;
+
+        class Person{
+            constructor(name){
+                this.name = name;
+            }
+            selam(){
+                document.write("Hello "+this.name) // Hello Muhammed
+            }
+        }
+        var person = new Person("Muhammed");
+        person.selam();
+    </script>
+</body>
+</html>

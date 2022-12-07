@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnheritance (Kalıtım)</title>
+</head>
+<body>
+    <script>
+        // Kalıtım => Miras Almaktadır. 
+        // Person, Student.
+        class Person{
+            constructor(name){
+                this.name = name;
+                this.depertment ="Bilgisayar Mühendisliği";
+                this.lesson ="Javascript Programlama";
+            }
+        }
+        class Student extends Person{
+            constructor(name,age){
+                super(name); // üst class erişim için kullanılır.
+                this.age = age;
+            }
+            data(){
+                document.write("Name :"+this.name+"<br>")
+                document.write("Depertment :"+this.depertment+"<br>")
+                document.write("Lesson :"+this.lesson+"<br>")
+                document.write("Age :"+this.age+"<br>")
+            }
+        }
+        var student = new Student("Muhammed",26)
+        student.data();
+    </script>
+</body>
+</html>

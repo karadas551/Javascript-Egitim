@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Uygulama</title>
+</head>
+<body>
+    <script>
+        // Kullanıcıdan bir domain ismi girmesini isteyeceğiz.
+        // Kullanıcının girdiği dönemin ismi : google.com şeklinde olacak.
+        // Girilen Domain : google.com 
+        // Domain Uzantısı : .com
+        // Domain Adı : google 
+        // prompt() => kullanıcıdan değer almamızı sağlar.
+        
+        var domainName = prompt("Domain Giriniz :") //google.com 
+        var uzanti = domainName.substring(domainName.lastIndexOf(".")) // .com
+        var name = domainName.replace(uzanti,""); //google
+
+        document.write("Girilen Domain :"+domainName+"<br>")
+        document.write("Domain Uzantısı :"+uzanti+"<br>")
+        document.write("Domain Adi :"+name+"<br>")
+    </script>
+</body>
+</html>

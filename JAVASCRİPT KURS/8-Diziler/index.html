@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diziler</title>
+</head>
+<body>
+    <script>
+        //Diziler => Birden fazla değişkeni bir arada tutan yapılardır.
+
+        var ogrenciler = ["Azra Yüsra", "Yusuf Talha", "Mustafa", "Muhammed"]
+        console.log(ogrenciler)
+        //document.write(ogrenciler[0]+"<br>")
+        
+        for(var i=0;i<ogrenciler.length;i++){
+            document.write(ogrenciler[i]+"<br>")
+        }
+
+        //push() => Sona yeni eleman ekleme komutudur.
+        ogrenciler.push("Ahmet")
+        console.log(ogrenciler);
+        //pop() => Son elemanı silecektir. 
+        ogrenciler.pop();
+        console.log(ogrenciler)
+        //unshift() => Başa yeni eleman eklemede kullanılır.
+        ogrenciler.unshift("Aydın")
+        console.log(ogrenciler);
+        //shift() => Baştaki elemanı silmemize yarar.
+        ogrenciler.shift()
+        console.log(ogrenciler)
+    </script>
+    <script src="js/slice.js"></script>
+    <script src="js/concat.js"></script>
+    <script src="js/indexOf.js"></script>
+    <script src="js/join.js"></script>
+</body>
+</html>
